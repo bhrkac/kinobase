@@ -4,7 +4,7 @@ import ReactDOM from 'react-dom';
 const Title = () => {
   return (
     <div className="title">
-      <div>Movieflix</div>
+      <div>kinobase</div>
       <div className="subtitle">
         The place for your film collection.
         </div>
