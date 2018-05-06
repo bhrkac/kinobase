@@ -10,7 +10,7 @@ class AddMovie extends React.Component {
 
   omdbFetch(searchTitle) {
     if (searchTitle) {
-      fetch('http://www.omdbapi.com/?apikey=be49403a&t=' + searchTitle)
+      fetch('https://www.omdbapi.com/?apikey=be49403a&t=' + searchTitle)
         .then((response) => {
           return response.json();
         })
