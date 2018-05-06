@@ -9,7 +9,9 @@
     "serve": "live-server public/",
     "build:dev": "webpack-cli",
     "build:prod": "webpack -p --env production",
-    "kino-server": "webpack-dev-server --watch"
+    "kino-server": "webpack-dev-server --watch",
+    "start": "node server/server.js",
+    "heroku-postbuild": "yarn run build:prod"
   },
   "dependencies": {
     "babel-core": "^6.26.0",
