@@ -19,7 +19,7 @@ const MovieDetail = (props) => {
         <div className="detail-info__tags">{props.films.genre}</div>
         <div className="detail-info__tags">{props.films.runtime}</div>
       </div>
-      <div className="detail-plot">"{props.films.imdbRating}"</div>      
+      <div className="detail-rating">&#9733;{props.films.imdbRating}</div>      
       <Link className="button-back" to="/"><div>Back</div></Link>
     </div>
   );

@@ -28,9 +28,14 @@ a {
   text-decoration: none;
 }
 
+table {
+//  width: 100%;
+//  table-layout: fixed;
+}
+
 th,
 td {
-  //		border: 1px solid white;
+  	border: 1px solid white;
   padding: 0rem 0.2rem 0 0.2rem;
 }
 
@@ -96,11 +101,6 @@ td {
 .database__info {
   color: lighten($dark-grey, 60%);
   font-size: 0.9rem;
-}
-
-.database__count {
-  text-align: left;
-  width: 1.2rem;
 }
 
 .database__title {
@@ -224,12 +224,14 @@ td {
   background-color: lighten($off-black, 20%);
 }
 
+/////////////////////////////////////////////////////////
+
 @media (max-width: 600px) {
 
   .menu {
     color: lighten($dark-grey, 60%);
     display: flex;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     height: 2rem;
     justify-content: space-evenly;
   }
@@ -251,17 +253,51 @@ td {
     width: 2.4rem;
   }
 
+
   .database {
     font-size: 0.9rem;
-  //       width: 24rem;
+    padding: 0.4rem 0 0.4rem 0;
+    //    width: 50rem;
+  }
+
+  .database__header {
+    background-color: darken($dark-grey, 6%);
+    border-bottom: 1px solid lighten($dark-grey, 20%);
+    color: $warm-yellow;
+    display: flex; //   justify-content: space-between;
+    font-size: 0.8rem;
+    margin: 0 0.8rem 0 0.8rem;
+    max-width: 24rem;
+    padding: 0.6rem 0 0.6rem 0;
   }
 
   .database__info {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
+  }
+
+  .database__title {
+    width: 12rem;
+  }
+
+  .database__year {
+    width: 2rem;
+  }
+
+  .database__director {
+    text-align: left;
+    width: 10rem;
+  }
+
+
+  .button-back {
+
+    font-size: 1.2rem;
+    height: 2.4rem;
+    width: 10rem;
   }
 
   .button__remove {
-    font-size: 0.7rem;
+    font-size: 1rem;
     height: 1.8rem;
     width: 1.8rem;
   }
