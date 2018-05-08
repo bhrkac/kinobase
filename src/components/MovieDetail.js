@@ -12,7 +12,7 @@ const MovieDetail = (props) => {
       <div className="detail-title">{props.films.title}</div>
       <h2>{props.films.director}, {props.films.year}.</h2>
       <div className="detail-actors">Starring: {props.films.actors}</div>
-      <div className="detail-poster"><img src={props.films.poster} alt="Poster not available" onError={"this.src='/src/images/noposter.jpg';"} /></div>
+      <div className="detail-poster"><img src={props.films.poster} alt="Poster not available"/></div>
       <div className="detail-plot">"{props.films.plot}"</div>
       <div className="detail-info">
         <div className="detail-info__tags">{props.films.country}</div>
