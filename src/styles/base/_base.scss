@@ -229,6 +229,16 @@ td {
 
 @media (max-width: 600px) {
 
+  .title {
+    font-size: 3rem;
+    margin: 0.5rem 0 0 0;
+  }
+
+  .subtitle {
+    font-size: 1.2rem;
+    margin: 0 0 0.8rem 0;
+  }
+
   .menu {
     color: lighten($dark-grey, 60%);
     display: flex;
@@ -291,23 +301,16 @@ td {
 
 
   .button-back {
-
     font-size: 1.2rem;
     height: 2.4rem;
+    margin: 0 0 1.2rem 0;
     width: 10rem;
   }
 
   .button__remove {
-    font-size: 1rem;
+    font-size: 1.2rem;
     height: 1.8rem;
     width: 1.8rem;
   }
 
-  .title {
-    font-size: 3rem;
-  }
-
-  .subtitle {
-    font-size: 1rem;
-  }
 }
