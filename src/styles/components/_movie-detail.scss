@@ -29,7 +29,7 @@
 
 .detail-poster {
   align-items: center;
-  background-color: lighten($off-black, 10%);
+  background-color: lighten($off-black, 3%);
   color: lighten($off-black, 30%);
   display: flex;
   font-size: 1.2rem;
@@ -76,6 +76,8 @@
   font-weight: bold;
   margin: 1rem 0 2rem 0;
 }
+
+///////////////////////////////////////////////
 
 @media (max-width: 600px) {
   .detail {
