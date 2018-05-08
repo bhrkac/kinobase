@@ -49,7 +49,7 @@ class AddMovie extends React.Component {
       <div className='form'>
         <form onSubmit={this.getTitle} >
           <div className="input-wrapper">
-            <input className="input-text" type='text' name='searchQuery' autoFocus />
+            <input className="input-text" type='text' name='searchQuery'/>
           </div>
           <button className="button-add">+</button>
         </form>
