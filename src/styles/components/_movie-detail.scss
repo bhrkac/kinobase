@@ -42,7 +42,7 @@
 }
 
 .detail-plot {
-  color: $warm-yellow;
+  color: lighten($dark-grey, 60%);
   //  font-family: 'Arial';
   margin: 1.4rem 0 1.4rem 0;
   text-align: center;
