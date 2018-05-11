@@ -6,10 +6,9 @@
   "author": "Brano",
   "license": "MIT",
   "scripts": {
-    "serve": "live-server public/",
     "build:dev": "webpack-cli",
     "build:prod": "webpack -p --env production",
-    "kino-server": "webpack-dev-server --watch",
+    "dev-server": "webpack-dev-server --watch",
     "start": "node server/server.js",
     "heroku-postbuild": "yarn run build:prod"
   },
@@ -22,7 +21,6 @@
     "babel-preset-react": "^6.24.1",
     "css-loader": "^0.28.10",
     "express": "^4.16.3",
-    "live-server": "^1.2.0",
     "node-sass": "^4.7.2",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
@@ -33,7 +31,9 @@
     "sass-loader": "^6.0.7",
     "style-loader": "^0.20.3",
     "webpack": "^4.0.1",
-    "webpack-cli": "^2.0.10",
+    "webpack-cli": "^2.0.10"
+  },
+  "devDependencies": {
     "webpack-dev-server": "^3.1.0"
   }
 }
