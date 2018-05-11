@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter, Route, Switch, Link, NavLink } from 'react-router-dom';
-import Movieflix from './../components/Movieflix';
 import MovieList from './../components/MovieList';
 import { Title, Menu } from '../components/Header';
 import MovieDetail from './../components/MovieDetail';
