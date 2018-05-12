@@ -1,0 +1,81 @@
+.form {
+  //  align-content: center;
+  //  align-items: center;
+  background-color: red; //  display: flex;
+  //  flex-flow: row wrap;
+  height: 2rem; //  justify-content: left;
+  margin: 0 0.8rem 0 0.8rem; //  max-width: 60rem;
+  width: 100%;
+}
+
+.input-wrapper {
+  margin-right: 3rem;
+}
+
+.input-text {
+  //   background-color: lighten($background, 80%);
+  border: none;
+  height: 2rem;
+  font-size: 1.2rem; // padding: 0.3rem;
+  float: left;
+  width: 100%;
+  -ms-box-sizing: border-box;
+  /* ie8 */
+  -khtml-box-sizing: border-box;
+  /* konqueror */
+  -webkit-box-sizing: border-box;
+  /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;
+  /* Firefox, other Gecko */
+  box-sizing: border-box;
+  /* Opera/IE 8+ */
+  box-sizing: border-box;
+  /* css3 rec */
+}
+
+.button-add {
+  background-color: $off-red;
+  border: none;
+  color: white;
+  font-size: 1.2rem; //   font-weight: bold;
+  height: 2rem;
+  width: 2rem;
+  box-sizing: border-box;
+}
+
+.button-add:hover {
+  background-color: darken($off-red, 5%);
+  cursor: pointer;
+}
+
+.button-add:active {
+  background-color: darken($off-red, 10%);
+}
+
+/////////////////////////////////////////////////////////
+
+@media (max-width: 600px) {
+.form {
+  width: 21.8rem;
+}
+
+.input-wrapper {
+  margin-right: 2rem;
+}
+
+.inputText {
+  border: none;
+  border-radius: 0;
+  height: 2rem;
+  font-size: 1rem;
+}
+
+.button-add {
+  background-color: $off-red;
+  color: white;
+  font-size: 1rem;
+  border: none;
+  height: 2rem;
+  width: 2rem;
+}
+}
