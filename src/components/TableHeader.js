@@ -24,7 +24,7 @@ const TableHeader = (props) => {
             <th className="database__director">
               <button className="sort-button" onClick={() => { props.dispatch(sortByRating()); }
               }
-              >RATING</button></th>
+              >IMDB</button></th>
           </tr>
         </thead>
       </table>

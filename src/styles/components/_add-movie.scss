@@ -1,11 +1,8 @@
 .form {
-  //  align-content: center;
-  //  align-items: center;
-  background-color: red; //  display: flex;
-  //  flex-flow: row wrap;
-  height: 2rem; //  justify-content: left;
-  margin: 0 0.8rem 0 0.8rem; //  max-width: 60rem;
-  width: 100%;
+//  background-color: red; 
+  height: 2rem;
+  margin: 0 0.8rem 0 0.8rem;
+  width: 96%;
 }
 
 .input-wrapper {
@@ -16,7 +13,7 @@
   //   background-color: lighten($background, 80%);
   border: none;
   height: 2rem;
-  font-size: 1.2rem; // padding: 0.3rem;
+  font-size: 1.4rem; // padding: 0.3rem;
   float: left;
   width: 100%;
   -ms-box-sizing: border-box;
@@ -37,9 +34,9 @@
   background-color: $off-red;
   border: none;
   color: white;
-  font-size: 1.2rem; //   font-weight: bold;
+  font-size: 1.4rem;
   height: 2rem;
-  width: 2rem;
+  width: 3rem;
   box-sizing: border-box;
 }
 
@@ -56,11 +53,11 @@
 
 @media (max-width: 600px) {
 .form {
-  width: 21.8rem;
+  width: 21.4rem;
 }
 
 .input-wrapper {
-  margin-right: 2rem;
+  margin-right: 2.4rem;
 }
 
 .inputText {
@@ -76,6 +73,6 @@
   font-size: 1rem;
   border: none;
   height: 2rem;
-  width: 2rem;
+  width: 2.4rem;
 }
 }

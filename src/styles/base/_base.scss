@@ -74,27 +74,6 @@ a {
   width: 10rem;
 }
 
-.button__remove {
-  background-color: $off-red;
-  color: white;
-  border: none;
-  border-radius: 0.4rem;
-  font-size: 1.5rem;
-  //  font-weight: bold;
-  height: 2rem;
-  margin: 0 0.2rem 0 0;
-  width: 2rem;
-}
-
-.button__remove:hover {
-  background-color: darken($off-red, 10%);
-  cursor: pointer;
-}
-
-.button__remove:active {
-  background-color: darken($off-red, 20%);
-}
-
 .sort-button {
   background: none;
   color: $warm-yellow;
@@ -113,6 +92,7 @@ a {
 }
 
 /////////////////////////////////////////////////////////
+
 @media (max-width: 600px) {
   #app {
     width: 375px;
@@ -140,9 +120,5 @@ a {
     margin: 1rem 0 1.2rem 0;
     width: 10rem;
   }
-  .button__remove {
-    font-size: 0.8rem;
-    height: 1.6rem;
-    width: 1.6rem;
-  }
+
 }

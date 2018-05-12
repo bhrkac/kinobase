@@ -7,7 +7,7 @@ const Title = () => {
       <div>kinobase</div>
       <div className="subtitle">
         The place for your film collection.
-        </div>
+      </div>
     </div>
   );
 };
