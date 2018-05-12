@@ -12,6 +12,7 @@
 .input-text {
   //   background-color: lighten($background, 80%);
   border: none;
+  border-radius: 0;
   height: 2rem;
   font-size: 1.4rem; // padding: 0.3rem;
   float: left;
@@ -60,17 +61,16 @@
   margin-right: 2.4rem;
 }
 
-.inputText {
+.input-text {
   border: none;
-  border-radius: 0;
   height: 2rem;
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 
 .button-add {
   background-color: $off-red;
   color: white;
-  font-size: 1rem;
+  font-size: 1.4rem;
   border: none;
   height: 2rem;
   width: 2.4rem;
