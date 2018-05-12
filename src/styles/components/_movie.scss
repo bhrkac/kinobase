@@ -53,3 +53,33 @@ td {
   text-align: left;
   width: 10rem;
 }
+
+//////////////////////////////////////////////////
+@media (max-width: 600px) {
+  .database {
+    font-size: 0.9rem;
+    padding: 0.4rem 0 0.4rem 0; //    width: 50rem;
+  }
+  .database__header {
+    background-color: darken($dark-grey, 6%);
+    border-bottom: 1px solid lighten($dark-grey, 20%);
+    color: $warm-yellow;
+    display: flex; //   justify-content: space-between;
+    font-size: 0.8rem;
+    margin: 0 0.8rem 0 0.8rem; //  max-width: 24rem;
+    padding: 0.6rem 0 0.6rem 0;
+  }
+  .database__info {
+    font-size: 0.9rem;
+  }
+  .database__title {
+    width: 12rem;
+  }
+  .database__year {
+    width: 2rem;
+  }
+  .database__director {
+    text-align: left;
+    width: 8rem;
+  }
+}
