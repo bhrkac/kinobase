@@ -3,7 +3,13 @@
 }
 
 body {
+  background-color: $off-black;
+  display: flex;
+  height: 100%;
+  justify-content: center;
   margin: 0 auto;
+//  position: fixed;
+  width: 100%;
 }
 
 #app {
@@ -11,17 +17,13 @@ body {
   //   align-items: center;
   background-color: $off-black;
   color: white;
-  display: flex;
   font-family: 'Lato', 'Open Sans', sans-serif;
   font-size: 1.2rem;
-  height: 100%;
-  justify-content: center;
-  margin: 0 0.1rem 0 0.1rem;
+ // height: 100%;
   overflow: auto;
-  position: fixed;
   text-align: center;
   text-decoration: none;
-  width: 120%;
+//  width: 100%;
 }
 
 a {
@@ -48,7 +50,7 @@ a {
   color: lighten($dark-grey, 60%);
   height: 3rem;
   justify-content: space-evenly;
-  margin: 0.8rem 0.8rem 0 0.8rem;
+//  margin: 0.8rem 0.8rem 0 0.8rem;
 }
 
 .menu-item {
@@ -96,8 +98,8 @@ a {
 
 @media (max-width: 600px) {
   #app {
-    margin: 0 0.1 0 0.1;
-    width: 500px;
+ //   margin: 0 0 0 0;
+ //   width: 500px;
   }
 
   .title {
