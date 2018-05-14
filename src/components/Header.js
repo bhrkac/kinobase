@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { NavLink } from 'react-router-dom';
 
 const Title = () => {
   return (
@@ -15,10 +16,10 @@ const Title = () => {
 const Menu = () => {
   return (
     <div className="menu">
-      <div className="menu-item">Search</div>
-      <div className="menu-item">Seen (754)</div>
-      <div className="menu-item">Want (323)</div>
-      <div className="menu-item">Stats</div>
+      <NavLink to='/' exact className="menu-item" activeClassName="menu-item__active">Search</NavLink>
+      <NavLink to='/list/' className="menu-item" activeClassName="menu-item__active">List</NavLink>
+      <NavLink to='/want/' className="menu-item" activeClassName="menu-item__active">Want</NavLink>
+      <NavLink to='/stats/' className="menu-item" activeClassName="menu-item__active">Stats</NavLink>
     </div>
   );
 };
