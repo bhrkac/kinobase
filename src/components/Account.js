@@ -7,7 +7,7 @@ const Account = () => {
     <div>
       <br />
       <br />
-      <div className="subtitle">Under construction...</div>
+      <div className="subtitle">Account page coming soon...</div>
    {/*  <img src={logo} /> */}
     </div>
   );

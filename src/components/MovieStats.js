@@ -6,7 +6,7 @@ const Stats = () => {
     <div>
       <br />
       <br />
-      <div className="subtitle">Under construction...</div>
+      <div className="subtitle">Statistics page coming soon...</div>
     </div>
   );
 };
