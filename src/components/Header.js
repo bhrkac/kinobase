@@ -18,8 +18,8 @@ const Menu = () => {
     <div className="menu">
       <NavLink to='/' exact className="menu-item" activeClassName="menu-item__active">Search</NavLink>
       <NavLink to='/list/' className="menu-item" activeClassName="menu-item__active">List</NavLink>
-      <NavLink to='/want/' className="menu-item" activeClassName="menu-item__active">Want</NavLink>
       <NavLink to='/stats/' className="menu-item" activeClassName="menu-item__active">Stats</NavLink>
+      <NavLink to='/account/' className="menu-item" activeClassName="menu-item__active">Account</NavLink>
     </div>
   );
 };
