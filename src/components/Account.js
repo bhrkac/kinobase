@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import logo from '../../public/images/profile.png';
+//import logo from '../../public/images/profile.png';
 
 const Account = () => {
   return (
