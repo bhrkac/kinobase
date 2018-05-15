@@ -12,19 +12,6 @@ import Account from './../components/Account';
 const AppRouter = () => (
     <BrowserRouter>
       <div>
-{
-  /*         <Title />const Title = () => {
-    return (
-      <div className="title">
-        <div>kinobase</div>
-        <div className="subtitle">
-          The place for your film collection.
-        </div>
-      </div>
-    );
-  };
-        <Menu />
-        <AddMovie /> */}
         <Switch>
           <Route exact path="/" component={() => (<div><Title /><Menu /><AddMovie /><MovieList /></div>)} />
           <Route path="/list" component={() => (<div><Title /><Menu /><MovieList /></div>)} />
