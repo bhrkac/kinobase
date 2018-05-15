@@ -23,6 +23,10 @@ module.exports = (env) => {
             'css-loader',
             'sass-loader'
           ]
+        },
+        {
+          test: /\.(png|jpg)$/,
+          loader: 'url-loader?limit=8192'
         }
       ]
     },
