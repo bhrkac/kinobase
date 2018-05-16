@@ -9,19 +9,19 @@ const TableHeader = (props) => {
       <table>
         <thead>
           <tr>
-            <th className="database__title">
+            <th className="database__header_title">
               <button className="sort-button" onClick={() => { props.dispatch(sortByTitle()); }
               }
               >TITLE</button></th>
-            <th className="database__year">
+            <th className="database__header_year">
               <button className="sort-button" onClick={() => { props.dispatch(sortByYear()); }
               }
               >YEAR</button></th>
-            <th className="database__director">
+            <th className="database__header_director">
               <button className="sort-button" onClick={() => { props.dispatch(sortByDirector()); }
               }
               >DIRECTOR</button></th>
-            <th className="database__director">
+            <th className="database__header_rating">
               <button className="sort-button" onClick={() => { props.dispatch(sortByRating()); }
               }
               >IMDB</button></th>

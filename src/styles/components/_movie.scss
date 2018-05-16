@@ -54,6 +54,26 @@ td {
   width: 10rem;
 }
 
+.database__header_title {
+  color: white;
+  font-weight: bold;
+  text-align: left;
+  width: 16rem;
+}
+
+.database__header_year {
+  width: 3.4rem;
+}
+
+.database__header_director {
+  text-align: left;
+  width: 10rem;
+}
+
+.database__header_rating {
+    width: 3.4rem;
+}
+
 .button__remove {
   background-color: $off-red;
   color: white;
@@ -122,6 +142,28 @@ td {
     height: 1.5rem;
     text-align: left;
     width: 7rem;
+  }
+
+  .database__header_title {
+    color: white;
+    font-weight: bold;
+    text-align: left;
+    width: 16.5rem;
+  }
+
+  .database__header_year {
+    text-align: left;
+    width: 2.5rem;
+  }
+
+  .database__header_director {
+    text-align: left;
+    width: 10rem;
+  }
+
+  .database__header_rating {
+    text-align: left;
+    width: 3.4rem;
   }
 
   .button__remove {

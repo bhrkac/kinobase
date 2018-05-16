@@ -19,16 +19,21 @@ img {
   justify-content: center;
 }
 
+.preview-info {
+  display: flex;
+  flex-flow: column wrap;
+}
+
 .preview-title {
-  font-family: "Bangers";
-  font-size: 4.5rem;
+  font-family: "Shrikhand";
+  font-size: 3rem;
   color: $warm-yellow;
-  margin: 1.4rem 1rem 0 1rem;
+  margin: 1rem 1rem 0 1rem;
 }
 
 .preview-subtitle {
-  font-size: 1.8rem;
-  color: $white;
+  font-size: 1.4rem;
+  color: lighten($dark-grey, 60%);
   margin: 1rem 0 1rem 0;
 }
 
@@ -46,7 +51,7 @@ img {
   margin: 1rem 0 1rem 0;
 }
 
-.previewplot {
+.preview-plot {
   color: lighten($dark-grey, 60%); //  font-family: 'Arial';
   margin: 1.4rem 0 1.4rem 0;
   text-align: center;
@@ -90,51 +95,33 @@ img {
   #app {
     width: 23rem;
   }
+
   .preview {
     font-size: 0.8rem;
     width: 23rem;
   }
+
   .preview-title {
     font-size: 1.8rem;
-    margin: 0.6rem 0.4rem 0rem 0.4rem;
+    margin: 0.3rem 0.4rem 0rem 0.4rem;
   }
+
   .preview-subtitle {
     font-size: 1rem;
-    color: $white;
-    margin: 0.2rem 0 0.2rem 0.4rem;
+    margin: 0 0 0 0;
   }
-  .preview-actors {
-    font-size: 0.9rem;
-    margin: 0rem 0.4rem 0rem 0.4rem;
-    width: 22rem;
-  }
+
   .preview-poster {
     height: 21rem;
     margin: 0.6rem 0 0 0;
     width: 15rem;
   }
-  .preview-plot {
-    margin: 0.4rem 0 0.4rem 0;
-    text-align: center;
-    width: 22rem;
-  }
+
   .preview-rating {
     color: $warm-yellow;
     font-size: 1.4rem;
     font-weight: bold;
     margin: 0rem 0 1rem 0;
   }
-  .preview-info {
-    margin: 0.2rem 0 0.6rem 0;
-    width: 23rem;
-  }
-  .preview-info__tags {
-    border: 1px solid lighten($off-black, 15%);
-    border-radius: 0.8rem;
-    font-size: 0.7rem;
-    margin: 0 0.4rem 0 0.4rem;
-    padding: 0.2rem;
-    height: 2.3rem;
-    width: 6.2rem;
-  }
+
 }
