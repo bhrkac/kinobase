@@ -104,9 +104,9 @@ a {
   background-color: lighten($off-black, 20%);
 }
 
-/////////////////////////////////////////////////////////
 
-@media (max-width: 600px) {
+// Mobile style
+@media (max-width: $small-screen) {
   #app {
  //   margin: 0 0 0 0;
  //   width: 500px;

@@ -15,11 +15,17 @@ const filmReducerDefaultState = [
     country: 'USA'
   },
   {
-    id: 'tt0052357',
-    title: 'Vertigo',
-    year: '1954',
-    director: 'Alfred Hitchcock',
-    imdbRating: 8.4
+    id: 'tt0034240',
+    title: 'Sullivan\'s Travels',
+    year: '1941',
+    director: 'Preston Sturges',
+    imdbRating: '8.1',
+    actors: 'Joel McCrea, Veronica Lake, Robert Warwick, William Demarest',
+    plot: 'A director of escapist films goes on the road as a hobo to learn about life, which gives him a rude awakening.',
+    genre: 'Adventure, Comedy, Drama',
+    poster: 'https://images-na.ssl-images-amazon.com/images/M/MV5BNjA2MjYwOTk2Nl5BMl5BanBnXkFtZTgwODE0MDkxMTE@._V1_SX300.jpg',
+    runtime: '90 min',
+    country: 'USA'
   },
   {
     id: 'tt0057869',

@@ -7,7 +7,8 @@ module.exports = (env) => {
     entry: './src/app.js',
     output: {
       path: path.join(__dirname, 'public', 'dist'),
-      filename: 'bundle.js'
+      filename: 'bundle.js',
+      publicPath: '/public'
     },
     module: {
       rules: [
@@ -23,6 +24,10 @@ module.exports = (env) => {
             'css-loader',
             'sass-loader'
           ]
+        },
+        {
+          test: /\.(png|jpg)$/,
+          loader: 'file-loader?name=/images/[name].[ext]'
         },
         {
           test: /\.(png|jpg)$/,

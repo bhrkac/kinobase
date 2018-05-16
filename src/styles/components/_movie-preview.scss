@@ -1,12 +1,12 @@
 #app {}
 
 img {
-  max-width:100%;
-  max-height:100%;
+  max-width: 100%;
+  max-height: 100%;
   object-fit: contain;
 }
 
-.detail {
+.preview {
   align-content: center;
   align-items: center;
   background-color: $off-black;
@@ -19,25 +19,25 @@ img {
   justify-content: center;
 }
 
-.detail-title {
+.preview-title {
   font-family: "Bangers";
   font-size: 4.5rem;
   color: $warm-yellow;
   margin: 1.4rem 1rem 0 1rem;
 }
 
-.detail-subtitle {
+.preview-subtitle {
   font-size: 1.8rem;
   color: $white;
   margin: 1rem 0 1rem 0;
 }
 
-.detail-actors {
+.preview-actors {
   color: lighten($dark-grey, 60%);
   font-size: 1.2rem;
 }
 
-.detail-poster {
+.preview-poster {
   align-items: center;
   background-color: lighten($off-black, 3%);
   color: lighten($off-black, 30%);
@@ -46,15 +46,14 @@ img {
   margin: 1rem 0 1rem 0;
 }
 
-.detail-plot {
-  color: lighten($dark-grey, 60%);
-  //  font-family: 'Arial';
+.previewplot {
+  color: lighten($dark-grey, 60%); //  font-family: 'Arial';
   margin: 1.4rem 0 1.4rem 0;
   text-align: center;
   width: 40em;
 }
 
-.detail-info {
+.preview-info {
   align-items: center;
   display: flex;
   justify-content: center;
@@ -62,7 +61,7 @@ img {
   width: 60rem;
 }
 
-.detail-info__tags {
+.preview-info__tags {
   align-items: center;
   background-color: black;
   border: 1px solid lighten($off-black, 10%);
@@ -79,68 +78,57 @@ img {
   width: 10rem;
 }
 
-.detail-rating {
+.preview-rating {
   color: $warm-yellow;
   font-size: 1.8rem;
   font-weight: bold;
   margin: 1rem 0 2rem 0;
 }
 
-
 // Mobile style
 @media (max-width: $small-screen) {
-
   #app {
     width: 23rem;
   }
-
-  .detail {
+  .preview {
     font-size: 0.8rem;
     width: 23rem;
   }
-
-  .detail-title {
-    font-size: 2.6rem;
+  .preview-title {
+    font-size: 1.8rem;
     margin: 0.6rem 0.4rem 0rem 0.4rem;
   }
-
-  .detail-subtitle {
-    font-size: 1.4rem;
+  .preview-subtitle {
+    font-size: 1rem;
     color: $white;
-    margin: 0.2rem 0 0.4rem 0.4rem;
+    margin: 0.2rem 0 0.2rem 0.4rem;
   }
-
-  .detail-actors {
+  .preview-actors {
     font-size: 0.9rem;
     margin: 0rem 0.4rem 0rem 0.4rem;
     width: 22rem;
   }
-
-  .detail-poster {
-    height: 28rem;
+  .preview-poster {
+    height: 21rem;
     margin: 0.6rem 0 0 0;
-    width: 20rem;
+    width: 15rem;
   }
-
-  .detail-plot {
+  .preview-plot {
     margin: 0.4rem 0 0.4rem 0;
     text-align: center;
     width: 22rem;
   }
-
-  .detail-rating {
+  .preview-rating {
     color: $warm-yellow;
     font-size: 1.4rem;
     font-weight: bold;
     margin: 0rem 0 1rem 0;
   }
-
-  .detail-info {
+  .preview-info {
     margin: 0.2rem 0 0.6rem 0;
     width: 23rem;
   }
-
-  .detail-info__tags {
+  .preview-info__tags {
     border: 1px solid lighten($off-black, 15%);
     border-radius: 0.8rem;
     font-size: 0.7rem;

@@ -50,9 +50,9 @@
   background-color: darken($off-red, 10%);
 }
 
-/////////////////////////////////////////////////////////
 
-@media (max-width: 600px) {
+// Mobile style
+@media (max-width: $small-screen) {
 .form {
   width: 23rem;
 }

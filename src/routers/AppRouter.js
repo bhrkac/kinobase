@@ -8,12 +8,13 @@ import NotFound from './../components/NotFound';
 import AddMovie from '../components/AddMovie';
 import Stats from './../components/MovieStats';
 import Account from './../components/Account';
+import MoviePreview from './../components/MoviePreview';
 
 const AppRouter = () => (
     <BrowserRouter>
       <div>
         <Switch>
-          <Route exact path="/" component={() => (<div><Title /><Menu /><AddMovie /><MovieList /></div>)} />
+          <Route exact path="/" component={() => (<div><Title /><Menu /><AddMovie /><MoviePreview /></div>)} />
           <Route path="/list" component={() => (<div><Title /><Menu /><MovieList /></div>)} />
           <Route path="/stats" component={() => (<div><Title /><Menu /><Stats /></div>)} />
           <Route path="/account" component={() => (<div><Title /><Menu /><Account /></div>)} />
