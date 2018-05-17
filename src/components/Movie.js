@@ -20,7 +20,8 @@ const Movie = ({ id, dispatch, title, year, director, imdbRating }) => {
         </table>
       </Link>
       <button onClick={(e) => {
-        dispatch(removeMovie({ title }));
+        console.log(id);
+        dispatch(removeMovie({ id }));
       }} className="button__remove">&times;
         </button>
     </div>

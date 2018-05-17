@@ -1,6 +1,7 @@
 const filtersReducerDefaultState = {
   sortBy: 'title',
   ascending: false,
+  showPreview: false,
   id: ''
 };
 
@@ -33,7 +34,12 @@ export default (state = filtersReducerDefaultState, action) => {
     case 'GET_MOVIE_DETAIL':
       return {
         ...state
-      };     
+      };  
+    case 'SHOW_LAST_MOVIE':
+      return {
+        ...state,
+        showPreview: action.show
+      }   
     default:
       return state;
   }

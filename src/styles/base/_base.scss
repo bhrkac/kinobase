@@ -51,7 +51,8 @@ a {
   height: 3rem;
   justify-content: space-evenly;
 //  margin: 0.8rem 0.8rem 0 0.8rem;
-  width: 100%;
+//  width: 100%;
+  width: 40rem;
 }
 
 .menu-item {
@@ -69,9 +70,14 @@ a {
   align-items: center;
   background-color: lighten($dark-grey, 8%);
   border: 1px solid $off-black;
-  display: flex; //  height: 100%;
-  justify-content: center;
   width: 100%;
+}
+
+.counter {
+  background-color: lighten($dark-grey, 10%);
+  border-radius: 6px;
+  font-size: 1rem;
+  width: 1.6rem;
 }
 
 .button-back {
@@ -108,27 +114,30 @@ a {
 
 // Mobile style
 @media (max-width: $small-screen) {
+
   #app {
- //   margin: 0 0 0 0;
- //   width: 500px;
+
   }
 
   .title {
     font-size: 3rem;
-    margin: 0.2rem 0 0 0;
+    margin: -0.3rem 0 0 0;
   }
 
   .subtitle {
     font-size: 1.2rem;
-    margin: -0.8rem 0 1.2rem 0;
+    margin: -1rem 0 1rem 0;
   }
 
   .menu {
-    color: lighten($dark-grey, 60%);
     display: flex;
     font-size: 0.9rem;
     height: 2rem;
-    justify-content: space-evenly;
+    width: 23rem;
+  }
+
+  .counter {
+    font-size: 0.8rem;
   }
  
   .button-back {

@@ -1,6 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { addMovie } from '../actions/filmActions';
+import { showLastMovie } from '../actions/filterActions';
 
 class AddMovie extends React.Component {
   constructor(props) {
@@ -32,6 +33,7 @@ class AddMovie extends React.Component {
               country: moviesObject.Country
             }
             ))
+            this.props.dispatch(showLastMovie(true));
           };
       });
     };
@@ -51,7 +53,7 @@ class AddMovie extends React.Component {
           <div className="input-wrapper">
             <input className="input-text" type='text' name='searchQuery'/>
           </div>
-          <button className="button-add">+</button>
+          <button className="button-search">&#9906;</button>
         </form>
       </div>
     )

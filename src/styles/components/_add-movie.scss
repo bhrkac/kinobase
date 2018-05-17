@@ -31,7 +31,7 @@
   /* css3 rec */
 }
 
-.button-add {
+.button-search {
   background-color: $off-red;
   border: none;
   color: white;
@@ -41,17 +41,18 @@
   box-sizing: border-box;
 }
 
-.button-add:hover {
+.button-search:hover {
   background-color: darken($off-red, 5%);
   cursor: pointer;
 }
 
-.button-add:active {
+.button-search:active {
   background-color: darken($off-red, 10%);
 }
 
 
 // Mobile style
+
 @media (max-width: $small-screen) {
 .form {
   width: 23rem;
@@ -67,7 +68,7 @@
   font-size: 1.2rem;
 }
 
-.button-add {
+.button-search {
   background-color: $off-red;
   color: white;
   font-size: 1.2rem;

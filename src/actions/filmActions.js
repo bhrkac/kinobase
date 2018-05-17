@@ -34,7 +34,8 @@ export const addMovie = (
 
 
 // REMOVE_MOVIE
-export const removeMovie = ({ title } = {}) => ({
+export const removeMovie = ({ id } = {}) => ({
   type: 'REMOVE_MOVIE',
-  title
+  id
 });
+

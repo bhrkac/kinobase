@@ -20,7 +20,7 @@ const MovieDetail = (props) => {
         <div className="detail-info__tags">{props.films.genre}</div>
         <div className="detail-info__tags">{props.films.runtime}</div>
       </div>
-      <Link className="button-back" to="/"><div>Back</div></Link>
+      <Link className="button-back" to="/list"><div>Back</div></Link>
     </div>
   );
 };

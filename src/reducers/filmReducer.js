@@ -57,7 +57,7 @@ export default (state = filmReducerDefaultState, action) => {
         action.movie
       ];
     case 'REMOVE_MOVIE':
-      return state.filter(({ title }) => title !== action.title);
+      return state.filter(({ id }) => id !== action.id);
     default:
       return state;      
   }

@@ -33,21 +33,3 @@ const sortMovies = (films, { sortBy, ascending }) => {
 };
 
 export default sortMovies;
-
-/* const sortMovies = (props) => {
-
-  if (this.sorted == "desc") {
-    this.setState((prevState) => ({
-      movies: prevState.movies.sort((this.propComparator(criteria))
-      )
-    }));
-    this.sorted = "asc";
-  }
-  else {
-    this.setState((prevState) => ({
-      movies: prevState.movies.reverse((this.propComparator(criteria))
-      )
-    }));
-    this.sorted = "desc";
-  };
-}; */

@@ -112,14 +112,31 @@ td {
   }
 
   .database__header {
-    background-color: darken($dark-grey, 6%);
-    border-bottom: 1px solid lighten($dark-grey, 20%);
-    color: $warm-yellow;
-    display: flex; //   justify-content: space-between;
     font-size: 0.8rem;
-    margin: 0 0 0 0; //  max-width: 24rem;
+    margin: 0.2rem 0 0 0; //  max-width: 24rem;
     padding: 0.4rem 0 0.4rem 0;
     width: 23rem;
+  }
+
+  .database__header_title {
+    font-weight: bold;
+    text-align: left;
+    width: 16.5rem;
+  }
+
+  .database__header_year {
+    text-align: left;
+    width: 2.5rem;
+  }
+
+  .database__header_director {
+    text-align: left;
+    width: 10rem;
+  }
+
+  .database__header_rating {
+    text-align: left;
+    width: 3.4rem;
   }
 
   .database__info {
@@ -142,28 +159,6 @@ td {
     height: 1.5rem;
     text-align: left;
     width: 7rem;
-  }
-
-  .database__header_title {
-    color: white;
-    font-weight: bold;
-    text-align: left;
-    width: 16.5rem;
-  }
-
-  .database__header_year {
-    text-align: left;
-    width: 2.5rem;
-  }
-
-  .database__header_director {
-    text-align: left;
-    width: 10rem;
-  }
-
-  .database__header_rating {
-    text-align: left;
-    width: 3.4rem;
   }
 
   .button__remove {

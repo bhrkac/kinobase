@@ -3,14 +3,19 @@ import ReactDOM from 'react-dom';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 import getLastMovie from '../selectors/getLastMovie';
+import { showLastMovie } from '../actions/filterActions';
+import { removeMovie } from '../actions/filmActions';
+
 
 const MoviePreview = (props) => {
+      console.log('movie id: ', props.lastFilm.id);
   return (
+    <div style={{ display: props.filters.showPreview ? 'flex' : 'none' }}>
     <div className="preview">
-      <div className="preview-poster"><img src={props.films.poster} alt="Poster not available"/></div>
+      <div className="preview-poster"><img src={props.lastFilm.poster} alt="Poster not available"/></div>
   { /* <div className="preview-info">  */ }
-        <div className="preview-title">{props.films.title}</div>
-        <div className="preview-subtitle">{props.films.director}, {props.films.year}.</div>
+        <div className="preview-title">{props.lastFilm.title}</div>
+        <div className="preview-subtitle">{props.lastFilm.director}, {props.lastFilm.year}.</div>
   { /*    </div>  */ }
     { /* <div className="preview-actors">Starring: {props.films.actors}</div> */}
   { /*     <div className="preview-plot">"{props.films.plot}"</div>   */ }
@@ -20,14 +25,25 @@ const MoviePreview = (props) => {
         <div className="preview-info__tags">{props.films.genre}</div>
         <div className="preview-info__tags">{props.films.runtime}</div>
       </div>  */ }
-      <Link className="button-back" to="/list"><div>Add</div></Link>
+      <div className="preview-buttons">
+        <button onClick={(e) => {
+          props.dispatch(showLastMovie(false))
+        }} className="preview-button ">&#10003;</button>
+      
+        <button onClick={(e) => {
+          props.dispatch(removeMovie(props.lastFilm.id))
+        }} className="preview-button ">&times;</button>
+      </div>
     </div>
+   </div>
   );
 };
 
 const mapStateToProps = (state, props) => {
   return {
-    films: getLastMovie(state.films)
+    films: state.films,
+    lastFilm: getLastMovie(state.films),
+    filters: state.filters
   }
 }
 

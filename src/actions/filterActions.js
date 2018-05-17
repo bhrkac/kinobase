@@ -23,3 +23,9 @@ export const sortByRating = () => ({
 export const getMovieDetail = () => ({
   type: 'GET_MOVIE_DETAIL'
 });
+
+//SHOW_LAST_MOVIE
+export const showLastMovie = (show) => ({
+  type: 'SHOW_LAST_MOVIE',
+  show
+});
