@@ -1,5 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import omdbAPIKey from '../omdbAPIKey';
 import { addMovie } from '../actions/filmActions';
 import { showLastMovie } from '../actions/filterActions';
 
@@ -11,7 +12,7 @@ class AddMovie extends React.Component {
 
   omdbFetch(searchTitle) {
     if (searchTitle) {
-      fetch('https://www.omdbapi.com/?apikey=be49403a&t=' + searchTitle)
+      fetch('https://www.omdbapi.com/?apikey=' + omdbAPIKey +'&type=movie&t=' + searchTitle)
         .then((response) => {
           return response.json();
         })
