@@ -1,3 +1,11 @@
+// ADD_MOVIE_PREVIEWS
+export const addMoviePreviews = (movie = {}
+) => ({
+  type: 'ADD_MOVIE_PREVIEWS',
+  movie: movie
+});
+
+
 // ADD_MOVIE
 export const addMovie = (
   {

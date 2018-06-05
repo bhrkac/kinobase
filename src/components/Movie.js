@@ -22,8 +22,8 @@ const Movie = ({ id, dispatch, title, year, director, imdbRating }) => {
       <button onClick={(e) => {
         console.log(id);
         dispatch(removeMovie({ id }));
-      }} className="button__remove">&times;
-        </button>
+       }} className="button__remove">&times;
+      </button>
     </div>
   )
 };

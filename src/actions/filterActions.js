@@ -24,8 +24,8 @@ export const getMovieDetail = () => ({
   type: 'GET_MOVIE_DETAIL'
 });
 
-//SHOW_LAST_MOVIE
-export const showLastMovie = (show) => ({
-  type: 'SHOW_LAST_MOVIE',
+//SHOW_PREVIEW
+export const showPreview = (show) => ({
+  type: 'SHOW_PREVIEW',
   show
 });

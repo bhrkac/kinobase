@@ -8,7 +8,7 @@ const MovieList = (props) => (
   <div>
     <TableHeader />
     {props.films.map((movie) => {
-      return <Movie key={movie.title} {...movie} />;
+      return <Movie key={movie.id} {...movie} />;
     })}
   </div>
 );

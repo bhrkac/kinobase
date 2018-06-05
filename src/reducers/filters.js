@@ -35,7 +35,7 @@ export default (state = filtersReducerDefaultState, action) => {
       return {
         ...state
       };  
-    case 'SHOW_LAST_MOVIE':
+    case 'SHOW_PREVIEW':
       return {
         ...state,
         showPreview: action.show

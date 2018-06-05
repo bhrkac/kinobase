@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import omdbAPIKey from '../omdbAPIKey';
+//import omdbAPIKey from '../omdbAPIKey';
 import { addMovie } from '../actions/filmActions';
 import { showLastMovie } from '../actions/filterActions';
 
@@ -54,7 +54,7 @@ class AddMovie extends React.Component {
           <div className="input-wrapper">
             <input className="input-text" type='text' name='searchQuery'/>
           </div>
-          <button className="button-search">&#9906;</button>
+          <button className="button-search"><span className="fas fa-search fa-sm"></span></button>
         </form>
       </div>
     )
