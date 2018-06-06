@@ -49,10 +49,6 @@ const MoviePreview = (filmPreviews) => {
         <button onClick={(e) => {
           omdbFetchAdd(filmPreviews.imdbID, filmPreviews.dispatch);
         }} className="preview-button "><span className="fas fa-check fa-xs"></span></button>
-      
-        <button onClick={(e) => {
-          dispatch(removeMovie(id))
-        }} className="preview-button "><span className="fas fa-times fa-xs"></span></button>
       </div>
     </div>
    </div>
