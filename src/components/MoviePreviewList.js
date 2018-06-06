@@ -13,6 +13,7 @@ const MoviePreviewList = (props) => (
     {props.filmPreviews.map((movie) => {
       return <MoviePreview key={movie.Id} {...movie} />;
     })}
+    <p className="preview-subtitle">Movie not found? Please try refining the search.</p>
   </div>
 );
 
