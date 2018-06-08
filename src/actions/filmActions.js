@@ -47,3 +47,8 @@ export const removeMovie = ({ id } = {}) => ({
   id
 });
 
+// REMOVE_MOVIE_PREVIEW
+export const removeMoviePreview = ( id  = '' ) => ({
+  type: 'REMOVE_MOVIE_PREVIEW',
+  id
+});

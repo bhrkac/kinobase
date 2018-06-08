@@ -4,7 +4,7 @@ import ReactDOM from 'react-dom';
 import { connect } from 'react-redux';
 import { addMovie } from '../actions/filmActions';
 import { showPreview } from '../actions/filterActions';
-import { removeMovie } from '../actions/filmActions';
+import { removeMoviePreview } from '../actions/filmActions';
 import omdbAPIKey from '../omdbAPIKey';
 
 const omdbFetchAdd = (searchID, dispatch) => {
@@ -30,7 +30,9 @@ const omdbFetchAdd = (searchID, dispatch) => {
             runtime: moviesObject.Runtime,
             country: moviesObject.Country
           }));
-          dispatch(showPreview(false));
+          dispatch(removeMoviePreview(moviesObject.imdbID));
+          console.log('moviesObject.imdbID', moviesObject.imdbID);
+         // dispatch(showPreview(false));
         };
       });
   };
@@ -46,9 +48,13 @@ const MoviePreview = (filmPreviews) => {
       <div className="preview-title">{filmPreviews.Title}</div>
       <div className="preview-subtitle">{filmPreviews.Year}.</div>
       <div className="preview-buttons">
-        <button onClick={(e) => {
+        <button onClick={
+          (e) => {
           omdbFetchAdd(filmPreviews.imdbID, filmPreviews.dispatch);
-        }} className="preview-button "><span className="fas fa-check fa-xs"></span></button>
+      //      filmPreviews.dispatch(removeMovie(filmPreviews.imdbID));
+            console.log('filmPreviews.dispatch(removeMovie(filmPreviews.imdbID))', filmPreviews.imdbID);
+        }
+        } className="preview-button "><span className="fas fa-check fa-xs"></span></button>
       </div>
     </div>
    </div>

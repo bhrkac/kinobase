@@ -15,7 +15,13 @@ export default (state = previewReducerDefaultState, action) => {
   switch (action.type) {
     case 'ADD_MOVIE_PREVIEWS':
       return action.movie;
+    case 'REMOVE_MOVIE_PREVIEW':
+      return state.filter(({ imdbID } ) => {
+      return imdbID !== action.id;
+      }
+    )
+      ;
     default:
       return state;
-  }
-}
+  };
+};
