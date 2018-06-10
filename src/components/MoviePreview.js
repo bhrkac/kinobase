@@ -31,8 +31,6 @@ const omdbFetchAdd = (searchID, dispatch) => {
             country: moviesObject.Country
           }));
           dispatch(removeMoviePreview(moviesObject.imdbID));
-          console.log('moviesObject.imdbID', moviesObject.imdbID);
-         // dispatch(showPreview(false));
         };
       });
   };
@@ -40,19 +38,18 @@ const omdbFetchAdd = (searchID, dispatch) => {
 
 
 const MoviePreview = (filmPreviews) => {
-      console.log('MoviePreview - filmPreviews: ', filmPreviews);
   return (
     <div>
     <div className="preview">
       <div className="preview-poster"><img src={filmPreviews.Poster} alt="Poster not available"/></div>
-      <div className="preview-title">{filmPreviews.Title}</div>
-      <div className="preview-subtitle">{filmPreviews.Year}.</div>
+      <div className="preview-info">
+        <div className="preview-title">{filmPreviews.Title}</div>
+        <div className="preview-subtitle">{filmPreviews.Year}.</div>
+      </div>
       <div className="preview-buttons">
         <button onClick={
           (e) => {
           omdbFetchAdd(filmPreviews.imdbID, filmPreviews.dispatch);
-      //      filmPreviews.dispatch(removeMovie(filmPreviews.imdbID));
-            console.log('filmPreviews.dispatch(removeMovie(filmPreviews.imdbID))', filmPreviews.imdbID);
         }
         } className="preview-button "><span className="fas fa-check fa-xs"></span></button>
       </div>
