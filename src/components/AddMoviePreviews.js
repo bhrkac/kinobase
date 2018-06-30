@@ -4,6 +4,7 @@ import { connect } from 'react-redux';
 import omdbAPIKey from '../omdbAPIKey';
 import { addMoviePreviews } from '../actions/filmActions';
 import { showPreview } from '../actions/filterActions';
+import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 
 class AddMoviePreviews extends React.Component {
   constructor(props) {
@@ -36,12 +37,17 @@ class AddMoviePreviews extends React.Component {
   render() {
     return (
       <div className='form'>
+      <ReactCSSTransitionGroup
+          transitionName="fade"
+          transitionEnterTimeout={500}
+          transitionLeaveTimeout={300}>
         <form onSubmit={this.getTitle} >
           <div className="input-wrapper">
             <input className="input-text" type='text' name='searchQuery'/>
           </div>
           <button className="button-search"><span className="fas fa-search fa-sm"></span></button>
         </form>
+        </ReactCSSTransitionGroup>
       </div>
     )
   };

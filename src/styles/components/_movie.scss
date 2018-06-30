@@ -78,11 +78,11 @@ td {
   background-color: $off-red;
   color: white;
   border: none;
-  border-radius: 0.4rem;
+  border-radius: 0.2rem;
+  flex: 0 0 2rem;
   font-size: 1.5rem; //  font-weight: bold;
   height: 2rem;
   margin: 0 0.2rem 0 0;
-  width: 2rem;
 }
 
 .button__remove:hover {
@@ -164,8 +164,8 @@ td {
   .button__remove {
     border-radius: 0.2rem;
     font-size: 0.9rem;
+    flex: 0 0 1.5rem;
     height: 1.5rem;
     padding: 0;
-    width: 1.5rem;
   }
 }
