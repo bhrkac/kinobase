@@ -159,6 +159,8 @@ td {
     height: 1.5rem;
     text-align: left;
     width: 7rem;
+
+    text-overflow: ellipsis;
   }
 
   .button__remove {
